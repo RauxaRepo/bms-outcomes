@@ -1,0 +1,64 @@
+{
+    "key": "group_5e78c5f6ac704",
+    "title": "Clone: Background Color",
+    "fields": [
+        {
+            "key": "field_5e78c5fc0205a",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "None",
+                "white": "White",
+                "snowwhite": "Snow White",
+                "red": "Red",
+                "indianred": "Indian Red",
+                "palered": "Pale Red",
+                "blue": "Blue",
+                "aliceblue": "Alice Blue",
+                "indianblue": "Indian Blue",
+                "paleblue": "Pale Blue",
+                "palenavy": "Pale Navy",
+                "purple": "Purple",
+                "indianpurple": "Indian Purple",
+                "palepurple": "Pale Purple",
+                "marqueered": "Marquee Red",
+                "marqueeblue": "Marquee Blue",
+                "marqueepurple": "Marquee Purple"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1586440030
+}

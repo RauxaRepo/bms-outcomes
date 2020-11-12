@@ -178,3 +178,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+$templateDir = get_template_directory();
+
+require_once $templateDir . '/inc/acf.php';
