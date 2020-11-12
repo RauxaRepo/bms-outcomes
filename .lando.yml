@@ -1,0 +1,6 @@
+name: bms-outcomes
+recipe: pantheon
+config:
+  framework: wordpress
+  site: bms-outcomes
+  id: 4475aca8-719f-4365-b072-31468bc47c1d
