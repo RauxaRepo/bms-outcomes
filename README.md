@@ -10,15 +10,15 @@ Provide the email address of your Panthon account to the site admin.
 
 Generate a "machine token" from your pantheon account.
 
-Create a folder called inrebic-unbranded-ms
+Create a folder called bms-outcomes
 
 From within that folder run: $ lando init --source pantheon
 
 Enter your machine token when prompted.
 
-Select 'clg-revhcp-v2' from the list of envirnments.
+Select 'clg-revhcp-v2' from the list of environments.
 
-Lando will build you local development environmet.
+Lando will build you local development environment.
 
 Build/Start. $ lando start
 
@@ -34,7 +34,7 @@ Local URLs After started, Lando will display URLs that you can visit in your loc
 
 Get Latest Code from Github Create a new remote called "github" to get code from github.
 
-$ git remote add github git@github.com:RauxaRepo/inrebic-unbranded-ms.git
+$ git remote add github git@github.com:RauxaRepo/bms-outcomes.git
 
 $ git fetch github
 
