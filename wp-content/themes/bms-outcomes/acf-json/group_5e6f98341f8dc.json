@@ -1,6 +1,6 @@
 {
     "key": "group_5e6f98341f8dc",
-    "title": "Option Fields: Site Options",
+    "title": "Options - Site Options",
     "fields": [
         {
             "key": "field_5e84e278c0024",
@@ -222,7 +222,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "For questions about BMS medicines during this time please call <strong>1-800-721-8909<\\strong>.",
+                    "default_value": "For questions about BMS medicines during this time please call <strong>1-800-721-8909<strong>.",
                     "tabs": "all",
                     "toolbar": "simple",
                     "media_upload": 0,
@@ -910,7 +910,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1591596147
+    "active": true,
+    "description": ""
 }

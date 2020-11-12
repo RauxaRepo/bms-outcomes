@@ -1,6 +1,6 @@
 {
     "key": "group_5e83ae72ae2c0",
-    "title": "Clone: Text Color",
+    "title": "Field: Text Color",
     "fields": [
         {
             "key": "field_5e83ae72b3982",
@@ -46,7 +46,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1585764187
+    "active": true,
+    "description": ""
 }

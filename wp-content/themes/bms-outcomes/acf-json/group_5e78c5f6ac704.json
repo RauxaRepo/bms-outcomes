@@ -1,6 +1,6 @@
 {
     "key": "group_5e78c5f6ac704",
-    "title": "Clone: Background Color",
+    "title": "Field: Background Color",
     "fields": [
         {
             "key": "field_5e78c5fc0205a",
@@ -58,7 +58,6 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
-    "description": "",
-    "modified": 1586440030
+    "active": true,
+    "description": ""
 }
