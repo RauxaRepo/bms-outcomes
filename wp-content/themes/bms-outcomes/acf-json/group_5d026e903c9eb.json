@@ -202,6 +202,7 @@
     "hide_on_screen": [
         "the_content"
     ],
-    "active": true,
-    "description": ""
+    "active": 1,
+    "description": "",
+    "modified": 1605896202
 }
