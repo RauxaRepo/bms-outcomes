@@ -1,0 +1,35 @@
+{
+    "name": "rauxa/bms-outcomes",
+    "description": "Rauxa BMS Outcomes WordPress",
+    "repositories":[
+
+    ],
+    "require": {
+
+    },
+    "scripts": {
+        "get_frontend":
+        [   
+            "rm -fr wp-content/themes/bms-outcomes/build/",
+            "rm -fr wp-content/themes/bms-outcomes/assets/",
+            "mkdir wp-content/themes/bms-outcomes/build",
+            "cd wp-content/themes/bms-outcomes/build && git clone --single-branch --branch 'develop' https://yxinrauxa:4df95e10dc71fe37ae7c021b9f39b5e637246ccf@github.com/RauxaRepo/bms-outcomes-frontend.git",
+            "cp -r wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist .",
+            "rm -fr static",
+            "mv dist static",
+            "mv wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist/assets wp-content/themes/bms-outcomes/assets",
+            "rm -fr wp-content/themes/bms-outcomes/build/"
+
+        ],
+
+        "sync": 
+        [  
+            "@get_frontend"
+        ],
+
+        "post-update-cmd": 
+        [   
+            "@sync"
+        ]
+    }
+}
