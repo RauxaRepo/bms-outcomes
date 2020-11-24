@@ -5,8 +5,8 @@
  * The tabs are dynamically set. This allows changing the tabs easier.
  */
 
-if (!empty(get_field('ctas', 'options'))) {
-    $ctas = get_field('ctas', 'options');
+if (!empty(get_field('tray_ctas', 'options'))) {
+    $ctas = get_field('tray_ctas', 'options');
 }
 
 ?>
