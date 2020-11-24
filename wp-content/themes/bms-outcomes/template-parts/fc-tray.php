@@ -59,7 +59,7 @@ if (!empty(get_field('tray_ctas', 'options'))) {
                  * This allows us to pass in $i for the index
                  *
                  */
-                include('fc-tray-' . get_sub_field('type') . '.php');
+                include('fc-tray-' . get_row_layout() . '.php');
             }
         }
         ?>
