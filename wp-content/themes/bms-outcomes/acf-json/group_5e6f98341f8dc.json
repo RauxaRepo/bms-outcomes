@@ -913,7 +913,7 @@
         {
             "key": "field_5fbc0ad79f0f0",
             "label": "CTAs",
-            "name": "ctas",
+            "name": "tray_ctas",
             "type": "group",
             "instructions": "",
             "required": 0,
@@ -981,8 +981,8 @@
             "layouts": {
                 "layout_5fbc0e67bbc31": {
                     "key": "layout_5fbc0e67bbc31",
-                    "name": "tab",
-                    "label": "Tab",
+                    "name": "copy",
+                    "label": "Copy",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -1005,46 +1005,13 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5fbc0e8d1a992",
-                            "label": "Type",
-                            "name": "type",
-                            "type": "select",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "copy": "Copy",
-                                "pdf-file": "PDF File"
-                            },
-                            "default_value": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
-                        },
-                        {
                             "key": "field_5fbc0ea21a993",
                             "label": "Copy",
                             "name": "copy",
                             "type": "wysiwyg",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5fbc0e8d1a992",
-                                        "operator": "==",
-                                        "value": "copy"
-                                    }
-                                ]
-                            ],
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1055,23 +1022,44 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5fbc6755dcaaf": {
+                    "key": "layout_5fbc6755dcaaf",
+                    "name": "pdf-file",
+                    "label": "PDF FIle",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5fbc6755dcab0",
+                            "label": "Label",
+                            "name": "label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         },
                         {
-                            "key": "field_5fbc0ed71a994",
+                            "key": "field_5fbc6755dcab3",
                             "label": "PDF File",
                             "name": "file",
                             "type": "file",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_5fbc0e8d1a992",
-                                        "operator": "==",
-                                        "value": "pdf-file"
-                                    }
-                                ]
-                            ],
+                            "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1088,7 +1076,7 @@
                     "max": ""
                 }
             },
-            "button_label": "Add Row",
+            "button_label": "Add Tab",
             "min": "",
             "max": ""
         }
@@ -1110,5 +1098,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1606162046
+    "modified": 1606182946
 }
