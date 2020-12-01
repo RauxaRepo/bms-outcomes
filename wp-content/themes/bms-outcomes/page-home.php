@@ -6,7 +6,7 @@ get_header();
 ?>
     <section class="content">
 
-        <?php get_template_part( 'template-parts/fc', 'indication' ); ?>
+        <?php get_template_part( 'template-parts/options', 'indication' ); ?>
 
         <div class="content__container">
             <h1><?= get_field('title') ?></h1>

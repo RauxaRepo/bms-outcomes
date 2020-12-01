@@ -162,7 +162,7 @@
     ],
     "menu_order": 1,
     "position": "normal",
-    "style": "default",
+    "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
@@ -170,5 +170,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1606248582
+    "modified": 1606854408
 }

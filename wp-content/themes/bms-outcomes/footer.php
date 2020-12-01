@@ -13,7 +13,7 @@
 </main>
 
 <?php
-get_template_part( 'template-parts/fc', 'tray' );
+get_template_part( 'template-parts/options', 'tray' );
 
 wp_footer();
 ?>

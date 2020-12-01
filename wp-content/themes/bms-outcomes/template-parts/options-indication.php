@@ -2,7 +2,10 @@
 /**
  * Indication
  */
-$indication = get_field('indication');
+
+if (!empty(get_field('indication', 'options'))) {
+    $indication = get_field('indication', 'options');
+}
 
 if ($indication) {
     ?>
