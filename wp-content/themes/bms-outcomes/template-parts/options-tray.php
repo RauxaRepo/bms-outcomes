@@ -1,6 +1,6 @@
 <?php
 /**
- * Bottom Tray
+ * ISI Tray
  *
  * The tabs are dynamically set. This allows changing the tabs easier.
  */
