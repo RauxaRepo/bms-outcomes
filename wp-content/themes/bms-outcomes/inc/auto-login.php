@@ -76,7 +76,7 @@ add_action('init', 'auto_login');
 /**
  * Auth Cookie Expiration
  */
-function auth_cookie_expiration_filter_5587($expiration, $user_id, $remember) {
+function auth_cookie_expiration_filter($expiration, $user_id, $remember) {
     $user = wp_get_current_user();
     $allowed_roles = array('bms');
     if( array_intersect($allowed_roles, $user->roles ) ) {
@@ -88,7 +88,7 @@ function auth_cookie_expiration_filter_5587($expiration, $user_id, $remember) {
     }
     return $expiration;
 }
-add_filter('auth_cookie_expiration', 'auth_cookie_expiration_filter_5587', 10, 3);
+add_filter('auth_cookie_expiration', 'auth_cookie_expiration_filter', 10, 3);
 
 /**
  * Remove Admin Bar
