@@ -80,7 +80,11 @@ function auth_cookie_expiration_filter_5587($expiration, $user_id, $remember) {
     $user = wp_get_current_user();
     $allowed_roles = array('bms');
     if( array_intersect($allowed_roles, $user->roles ) ) {
-        $expiration = 604800; // 1 week in seconds
+        $restriction_expiry = get_field('restriction_expiry', 'options');
+        if(isset($restriction_expiry) && is_numeric($restriction_expiry)) {
+            $expiration = $restriction_expiry * 3600;
+
+        }
     }
     return $expiration;
 }

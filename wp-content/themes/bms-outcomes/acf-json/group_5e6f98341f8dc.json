@@ -1214,6 +1214,27 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5fc95b85737fa",
+            "label": "Session Expires (in hours)",
+            "name": "restriction_expiry",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": ""
         }
     ],
     "location": [
@@ -1233,5 +1254,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1607030317
+    "modified": 1607031893
 }
