@@ -8,13 +8,15 @@
  *
  * @package bms-outcomes
  */
+?>
 
+</main>
 
-get_template_part( 'template-parts/fc', 'tray' );
+<?php
+get_template_part( 'template-parts/options', 'tray' );
 
 wp_footer();
 ?>
 
-</main>
 </body>
 </html>

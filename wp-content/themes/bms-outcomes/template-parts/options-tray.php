@@ -1,6 +1,6 @@
 <?php
 /**
- * Bottom Tray
+ * ISI Tray
  *
  * The tabs are dynamically set. This allows changing the tabs easier.
  */
@@ -59,7 +59,7 @@ if (!empty(get_field('tray_ctas', 'options'))) {
                  * This allows us to pass in $i for the index
                  *
                  */
-                include('fc-tray-' . get_row_layout() . '.php');
+                include('options-tray-' . get_row_layout() . '.php');
             }
         }
         ?>

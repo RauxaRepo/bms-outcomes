@@ -56,6 +56,25 @@
                     "max_height": "",
                     "max_size": "",
                     "mime_types": ""
+                },
+                {
+                    "key": "field_5fc848e81a4a8",
+                    "label": "Drop Down Navigation Headline",
+                    "name": "navigation_headline",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 }
             ]
         },
@@ -896,7 +915,7 @@
         },
         {
             "key": "field_5fbc033c81a8c",
-            "label": "Tray",
+            "label": "ISI Tray",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -1079,6 +1098,41 @@
             "button_label": "Add Tab",
             "min": "",
             "max": ""
+        },
+        {
+            "key": "field_5fc6a56a116b8",
+            "label": "Indication",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fc6a573116b9",
+            "label": "Indication Copy",
+            "name": "indication",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -1098,5 +1152,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1606182946
+    "modified": 1606961417
 }
