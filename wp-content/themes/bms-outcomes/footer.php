@@ -16,6 +16,8 @@
 get_template_part( 'template-parts/options', 'tray' );
 
 wp_footer();
+
+get_template_part( 'template-parts/options', 'error-overlay' );
 ?>
 
 </body>
