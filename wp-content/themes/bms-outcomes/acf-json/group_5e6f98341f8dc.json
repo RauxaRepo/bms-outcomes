@@ -1198,7 +1198,7 @@
         },
         {
             "key": "field_5fc94d0f1f6b0",
-            "label": "Password Token",
+            "label": "Password Token (?token=123456)",
             "name": "restriction_password",
             "type": "text",
             "instructions": "",
@@ -1235,6 +1235,132 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_5fcaa2b02d905",
+            "label": "Display Errors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5fcaa3655d86e",
+            "label": "Content",
+            "name": "display_error_content",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5fcaa3ab026ec",
+                    "label": "Header",
+                    "name": "header",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_5fcaa3b6026ed",
+                    "label": "Footer",
+                    "name": "footer",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5fcaa38dea49a",
+            "label": "Error Messages",
+            "name": "display_error_messages",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5fcaa3d77d132",
+                    "label": "Mobile Error",
+                    "name": "mobile_error",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5fcaa3e77d133",
+                    "label": "Tablet Portrait Error",
+                    "name": "tablet_portrait_error",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -1254,5 +1380,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1607031893
+    "modified": 1607115761
 }
