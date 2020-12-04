@@ -1198,7 +1198,7 @@
         },
         {
             "key": "field_5fc94d0f1f6b0",
-            "label": "Password Token",
+            "label": "Password Token (?token=123456)",
             "name": "restriction_password",
             "type": "text",
             "instructions": "",
@@ -1254,5 +1254,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1607031893
+    "modified": 1607111640
 }
