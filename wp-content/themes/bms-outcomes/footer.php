@@ -12,8 +12,12 @@
 
 </main>
 
+<input class="js-pdf-viewer-url" type="hidden" value="<?= get_template_directory_uri()?>/scripts/pdfjs/web/viewer.html">
+
 <?php
 get_template_part( 'template-parts/options', 'tray' );
+
+get_template_part( 'template-parts/fc', 'modals' );
 
 wp_footer();
 
