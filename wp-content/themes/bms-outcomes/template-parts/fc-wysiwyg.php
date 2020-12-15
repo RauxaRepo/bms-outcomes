@@ -9,7 +9,7 @@
   $id = $layout['id'];
 ?>
 
-<section class="content <?php echo $backgroundColor; ?>" <?php if($id){ echo 'id="'.$id.'"'; } ?>>
+<section class="<?php echo $backgroundColor; ?>" <?php if($id){ echo 'id="'.$id.'"'; } ?>>
   <div class="container wysiwyg__container">
     <article>
       <?php 

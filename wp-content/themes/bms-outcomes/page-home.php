@@ -4,7 +4,7 @@
 
 $footer = get_field('footer', 'options');
 
-get_header();
+get_header('home');
 ?>
     <section class="content">
 

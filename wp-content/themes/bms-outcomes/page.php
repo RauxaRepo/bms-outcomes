@@ -14,8 +14,15 @@
 
 get_header();
 
-get_template_part( 'template-parts/aside');
+get_template_part('template-parts/aside');
+?>
 
-get_template_part( 'template-parts/fc', 'flexible-content' );
+    <section class="content">
+        <?php get_template_part('template-parts/nav-main-menu') ?>
+
+        <?php get_template_part('template-parts/fc', 'flexible-content'); ?>
+    </section>
+
+<?php
 
 get_footer();
