@@ -2,6 +2,8 @@
 
 /* Template Name: Home Page */
 
+$footer = get_field('footer', 'options');
+
 get_header();
 ?>
     <section class="content">
@@ -19,6 +21,7 @@ get_header();
                 </div>
                 <div class="footer__content">
                     <?= get_field('content_copy') ?>
+                    <small><?= $footer['copy'] ?></small>
                 </div>
             </div>
         </footer>

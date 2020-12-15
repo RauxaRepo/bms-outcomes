@@ -14,6 +14,8 @@
 
 get_header();
 
+get_template_part( 'template-parts/aside');
+
 get_template_part( 'template-parts/fc', 'flexible-content' );
 
 get_footer();
