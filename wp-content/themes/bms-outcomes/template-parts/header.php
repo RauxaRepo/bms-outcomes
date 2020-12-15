@@ -21,7 +21,7 @@
         <div class="drawer__menu container">
             <div class="drawer__grid">
                 <div class="drawer__col drawer__col--brand">
-                    <h2><?= $header['navigation_headline'] ?></h2>
+                    <h2><?= $header['headline'] ?></h2>
                 </div>
 
                 <?php

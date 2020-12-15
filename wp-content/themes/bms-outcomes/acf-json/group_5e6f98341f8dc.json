@@ -59,8 +59,8 @@
                 },
                 {
                     "key": "field_5fc848e81a4a8",
-                    "label": "Drop Down Navigation Headline",
-                    "name": "navigation_headline",
+                    "label": "Headline",
+                    "name": "headline",
                     "type": "textarea",
                     "instructions": "",
                     "required": 0,
@@ -284,7 +284,7 @@
                     "key": "field_5e6f9cda351b6",
                     "label": "Copy",
                     "name": "copy",
-                    "type": "wysiwyg",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -294,10 +294,10 @@
                         "id": ""
                     },
                     "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
                 },
                 {
                     "key": "field_5e6f9ce2351b7",
@@ -1380,5 +1380,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1607115761
+    "modified": 1608004549
 }

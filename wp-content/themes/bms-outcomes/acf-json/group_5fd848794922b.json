@@ -1,9 +1,9 @@
 {
-    "key": "group_5fbd60aad19cb",
-    "title": "Page - Home Page Content",
+    "key": "group_5fd848794922b",
+    "title": "Page - Start Page Content",
     "fields": [
         {
-            "key": "field_5fbd60d15b8c1",
+            "key": "field_5fd848794aa73",
             "label": "Titles",
             "name": "",
             "type": "accordion",
@@ -20,7 +20,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5fbd61b0ef5ec",
+            "key": "field_5fd848794aada",
             "label": "Title",
             "name": "title",
             "type": "textarea",
@@ -39,27 +39,8 @@
             "new_lines": ""
         },
         {
-            "key": "field_5fbd61bcef5ed",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_5fbd61d564d60",
-            "label": "Content",
+            "key": "field_5fd848794ac49",
+            "label": "Next CTA",
             "name": "",
             "type": "accordion",
             "instructions": "",
@@ -75,43 +56,7 @@
             "endpoint": 0
         },
         {
-            "key": "field_5fbd61f164d61",
-            "label": "Content Copy",
-            "name": "content_copy",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_5fbd62491aac6",
-            "label": "Start CTA",
-            "name": "",
-            "type": "accordion",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "open": 0,
-            "multi_expand": 0,
-            "endpoint": 0
-        },
-        {
-            "key": "field_5fbd62571aac7",
+            "key": "field_5fd848794acb2",
             "label": "CTA Label",
             "name": "cta_label",
             "type": "text",
@@ -130,7 +75,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_5fbd625d1aac8",
+            "key": "field_5fd848794ad01",
             "label": "CTA Link",
             "name": "cta_link",
             "type": "page_link",
@@ -156,7 +101,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-home.php"
+                "value": "page-start-date.php"
             }
         ]
     ],
@@ -170,5 +115,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1608009832
+    "modified": 1608009979
 }
