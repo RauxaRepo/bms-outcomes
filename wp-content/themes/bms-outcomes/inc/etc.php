@@ -71,3 +71,30 @@ function _disable_canonical_front_page( $redirect ) {
 }
 add_filter( 'redirect_canonical', '_disable_canonical_front_page' );
 
+
+/**
+ * Adds a css class to the body element
+ *
+ * @param  array $classes the current body classes
+ * @return array $classes modified classes
+ */
+function sk_body_class_for_pages( $classes ) {
+
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] =  $post->post_name . '-page';
+    }
+
+    return $classes;
+
+}
+add_filter( 'body_class', 'sk_body_class_for_pages' );
+
+/**
+ * Remove WP ability to add <p> and <br>
+ */
+remove_filter ('the_content', 'wpautop');
+function my_acf_add_local_field_groups() {
+    remove_filter('acf_the_content', 'wpautop' );
+}
+add_action('acf/init', 'my_acf_add_local_field_groups');
