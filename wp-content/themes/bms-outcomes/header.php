@@ -18,6 +18,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
+    <?php get_template_part('template-parts/ga'); ?>
 </head>
 
 <body <?= body_class('js-body template-2') ?>>
