@@ -89,3 +89,12 @@ function sk_body_class_for_pages( $classes ) {
 
 }
 add_filter( 'body_class', 'sk_body_class_for_pages' );
+
+/**
+ * Remove WP ability to add <p> and <br>
+ */
+remove_filter ('the_content', 'wpautop');
+function my_acf_add_local_field_groups() {
+    remove_filter('acf_the_content', 'wpautop' );
+}
+add_action('acf/init', 'my_acf_add_local_field_groups');
