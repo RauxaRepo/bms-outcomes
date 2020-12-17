@@ -68,7 +68,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Start",
+            "default_value": "Next",
             "placeholder": "",
             "prepend": "",
             "append": "",
@@ -115,5 +115,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1608009979
+    "modified": 1608060777
 }
