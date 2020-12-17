@@ -14,15 +14,25 @@
 
 get_header();
 
-get_template_part('template-parts/aside');
 ?>
 
-    <main class="main js-main">
-    <section class="content">
-        <?php get_template_part('template-parts/nav-main-menu') ?>
+    <main class="main js-main template-2">
+        <?php get_template_part('template-parts/aside'); ?>
 
-        <?php get_template_part('template-parts/fc', 'flexible-content'); ?>
-    </section>
+        <section class="content">
+            <?php get_template_part('template-parts/nav-main-menu') ?>
+
+            <div class="content__container">
+                <div class="content__banner">
+                    <h3><strong><?= get_field('content_title') ?></strong></h3>
+                </div>
+                <!-- WYSIWYG -->
+                <?= get_field('content_body') ?>
+                <!-- WYSIWYG -->
+            </div>
+
+            <?php get_template_part('template-parts/footer'); ?>
+        </section>
 
     </main>
 <?php

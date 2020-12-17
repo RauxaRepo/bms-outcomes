@@ -4,7 +4,7 @@
 get_header();
 
 $aside = get_field('aside_content');
-$asideCta = get_field('aside_start_date_cta');
+$asideCta = get_field('aside_start_date_cta', 'options');
 $asideLinks = get_field('aside_links');
 $pageContent = get_field('page_content');
 $pageCta = get_field('page_cta');
@@ -65,6 +65,7 @@ $pageCta = get_field('page_cta');
                     </div>
                     <!-- floating cta -->
                 </div>
+                <?php get_template_part('template-parts/footer'); ?>
             </section>
         </main>
     </div>
