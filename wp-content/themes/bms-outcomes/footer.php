@@ -10,8 +10,6 @@
  */
 ?>
 
-</main>
-
 <input class="js-pdf-viewer-url" type="hidden" value="<?= get_template_directory_uri()?>/scripts/pdfjs/web/viewer.html">
 
 <?php

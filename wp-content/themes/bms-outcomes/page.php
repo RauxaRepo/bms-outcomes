@@ -17,12 +17,14 @@ get_header();
 get_template_part('template-parts/aside');
 ?>
 
+    <main class="main js-main">
     <section class="content">
         <?php get_template_part('template-parts/nav-main-menu') ?>
 
         <?php get_template_part('template-parts/fc', 'flexible-content'); ?>
     </section>
 
+    </main>
 <?php
 
 get_footer();
