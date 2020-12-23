@@ -14,6 +14,7 @@
 
 get_header();
 
+$pageCta = get_field('page_cta');
 ?>
 
     <main class="main js-main template-2">
@@ -29,6 +30,14 @@ get_header();
                 <!-- WYSIWYG -->
                 <?= get_field('content_body') ?>
                 <!-- WYSIWYG -->
+
+                <?php if (isset($pageCta)) { ?>
+                    <!-- floating cta -->
+                    <div class="content__floating-cta">
+                        <a href="<?= $pageCta['link'] ?>" class="cta"><?= $pageCta['label'] ?></a>
+                    </div>
+                    <!-- floating cta -->
+                <?php } ?>
             </div>
 
             <?php get_template_part('template-parts/footer'); ?>
