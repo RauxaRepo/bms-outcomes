@@ -1,4 +1,4 @@
-Wordpress Envirnonment for Celgene bms-outcomes
+# Wordpress Envirnonment for Celgene bms-outcomes
 
 Below are instructions for setting up a local development environment using Lando, in conjunction with a remote development environment on Pantheon.
 
