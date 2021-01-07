@@ -13,7 +13,7 @@ $header = get_field('header', 'options');
                 <h2><?= $header['headline'] ?></h2>
 
                 <div class="aside__avatar">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/maintenance-patient-avatar.png" alt="">
+                    <img src="<?= get_template_directory_uri(); ?>/assets/images/maintenance-patient-avatar.png" alt="Maintenance Patient">
                 </div>
 
                 <div class="aside__footer">
