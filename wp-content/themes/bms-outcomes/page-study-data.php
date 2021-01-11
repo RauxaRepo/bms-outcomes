@@ -18,9 +18,9 @@ $pageCta = get_field('page_cta');
                         <span><?= $aside['title'] ?></span>
                     </div>
                     <h6><strong class="text-yellow"><?= $aside['start_label'] ?>:</strong></h6>
-                    <h4 class="js-print-therapy-start">MM/YYYY</h4>
+                    <h4 class="js-print-therapy-start">&nbsp;</h4>
                     <h6><strong class="text-yellow"><?= $aside['progression_label'] ?>:</strong></h6>
-                    <h4 class="js-print-prog-end">MM/YYYY</h4>
+                    <h4 class="js-print-prog-end">&nbsp;</h4>
                     <a class="aside__banner aside__banner--modal" href="<?= $asideCta['link'] ?>">
                         <img src="<?= get_template_directory_uri(); ?>/assets/images/external.png" alt="">
                         <span><?= $asideCta['label'] ?></span>
