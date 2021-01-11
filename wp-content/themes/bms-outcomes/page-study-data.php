@@ -36,10 +36,7 @@ $pageCta = get_field('page_cta');
                             ?>
                         </ul>
                     <?php } ?>
-                    <button class="aside__scroll js-scroll">
-                        <span class="aside__scroll-icon"></span>
-                        <?= $aside['scroll_label'] ?>
-                    </button>
+
                     <div class="aside__footer">
                         <div class="aside__logo">
                             <img src="<?= get_template_directory_uri(); ?>/assets/images/rev-logo.png" alt="">
