@@ -31,7 +31,7 @@ $pageCta = get_field('page_cta');
                 <?= get_field('content_body') ?>
                 <!-- WYSIWYG -->
 
-                <?php if (isset($pageCta)) { ?>
+                <?php if (!empty($pageCta['link'])) { ?>
                     <!-- floating cta -->
                     <div class="content__floating-cta">
                         <a href="<?= $pageCta['link'] ?>" class="cta"><?= $pageCta['label'] ?></a>
