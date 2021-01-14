@@ -59,7 +59,9 @@
                 <?php } // End Navigation Menu ?>
 
                 <div class="drawer__col drawer__col--footer">
-                    <img src="<?= get_template_directory_uri(); ?>/assets/images/rev-logo.png" alt="">
+                    <a href="<?= get_home_url() ?>">
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/rev-logo.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
