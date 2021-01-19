@@ -1,6 +1,6 @@
 # Wordpress Envirnonment for Celgene bms-outcomes
 
-Below are instructions for setting up a local development environment using Lando, in conjunction with a remote development environment on Pantheon.
+Below are instructions for setting up a local development environment using Lando, in conjunction with a remote development environment on Pantheon. 
 
 Install Lando Download and install Lando – A docker based local development environment. Download the latest .dmg file from this LINK.
 
