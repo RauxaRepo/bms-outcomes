@@ -2,24 +2,85 @@
     "name": "rauxa/bms-outcomes",
     "description": "Rauxa BMS Outcomes WordPress",
     "repositories":[
-
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "5.7.9",
+                "type": "wordpress-plugin",
+                "dist": {
+                  "type": "zip",
+                  "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9MzI1OTd8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE0LTA3LTA3IDEzOjQ2OjM5"
+                },
+                "require": {
+                  "composer/installers": "^1.4",
+                  "ffraenz/private-composer-installer": "^2.0"
+                }
+            }
+        },
+        {
+            "type":"composer",
+            "url":"https://FCE183EA3BDC5DCDD1BEA1FAA9B1207F:732C6278F932548B75ED6E802FEDCAD3@composer.deliciousbrains.com"
+        }
     ],
     "require": {
+        "wpackagist-plugin/redirection":"^4.1.1",
+        "wpackagist-plugin/enable-media-replace":"^3.2.9",
+        "wpackagist-plugin/password-protected":"^2.2.4",
+        "wpackagist-plugin/hyperdb":"^1.5",
+        "wpackagist-plugin/duo-wordpress":"^2.5.4",
+        "wpackagist-plugin/amazon-s3-and-cloudfront":"^2.1",
+        "wpackagist-plugin/amazon-web-services":"^1.0.5",
+        "wpackagist-plugin/wp-migrate-db":"^1.0.11",
+        "wpackagist-plugin/wordpress-seo":"^11.2.1",
+
+        "advanced-custom-fields/advanced-custom-fields-pro": "^5.0.0",
+        "wpackagist-plugin/contact-form-7":"^5.1.1",
+        "wpackagist-plugin/classic-editor":"^1.4",
+        "wpackagist-plugin/disable-comments":"^1.9.0",
+        "wpackagist-plugin/regenerate-thumbnails":"^3.1.0",
+        "wpackagist-plugin/custom-permalinks":"^1.5.1",
+        "wpackagist-plugin/custom-login-error-message":"^1.0.0"
+
 
     },
     "scripts": {
-        "get_frontend":
+        "package":[
+            "rm -fr deployment_package",
+            "mkdir deployment_package",
+            "cd deployment_package && git clone --single-branch --branch 'master' https://yxinrauxa:3583b7510d409a81ff2a54ba6bdef9002d465eed@github.com/RauxaRepo/clg_wp_package_env.git .",
+            "cd deployment_package/document_root && composer update",
+            "cd deployment_package/document_root && rm composer.* && rm .gitignore",
+            "cp -R wp-content/themes deployment_package/document_root/wp-content/",
+            "cp -R wp-content/plugins deployment_package/document_root/wp-content/",
+            "cp -R wp-content/uploads deployment_package/document_root/wp-content/"
+        ],
+        "get_frontend": 
+
         [   
-            "rm -fr wp-content/themes/bms-outcomes/build/",
-            "rm -fr wp-content/themes/bms-outcomes/assets/",
-            "mkdir wp-content/themes/bms-outcomes/build",
-            "cd wp-content/themes/bms-outcomes/build && git clone --single-branch --branch 'develop' https://yxinrauxa:4df95e10dc71fe37ae7c021b9f39b5e637246ccf@github.com/RauxaRepo/bms-outcomes-frontend.git",
-            "cp -r wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist .",
+            "rm -fr wp-content/themes/outcomesbuild/",
+            "rm -fr wp-content/themes/outcomes/assets/",
+            "mkdir wp-content/themes/outcomes/build",
+            "cd wp-content/themes/outcomes/build && git clone --single-branch --branch 'develop' https://yxinrauxa:3583b7510d409a81ff2a54ba6bdef9002d465eed@github.com/RauxaRepo/bms-outcomes-frontend.git",
+            "cp -r wp-content/themes/outcomes/build/bms-outcomes-frontend/dist .",
             "rm -fr static",
             "mv dist static",
-            "mv wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist/assets wp-content/themes/bms-outcomes/assets",
-            "rm -fr wp-content/themes/bms-outcomes/build/"
+            "mv wp-content/themes/outcomes/build/bms-outcomes-frontend/dist/assets wp-content/themes/outcomes/assets",
+            "rm -fr wp-content/themes/outcomes/build/"
 
+        ],
+        "get_theme": 
+        [  
+            "rm -fr get_theme",
+            "mkdir get_theme",
+            "cd get_theme && git clone --single-branch --branch 'develop' https://yxinrauxa:3583b7510d409a81ff2a54ba6bdef9002d465eed@github.com/RauxaRepo/clg-revpat.git",
+            "rm -fr wp-content/themes/outcomes",
+            "cp -r get_theme/clg-revpat/wp-content/themes/outcomes wp-content/themes/.",
+            "rm -fr get_theme"
         ],
 
         "sync": 
