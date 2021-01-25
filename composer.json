@@ -62,15 +62,15 @@
         "get_frontend": 
 
         [   
-            "rm -fr wp-content/themes/outcomesbuild/",
-            "rm -fr wp-content/themes/outcomes/assets/",
-            "mkdir wp-content/themes/outcomes/build",
-            "cd wp-content/themes/outcomes/build && git clone --single-branch --branch 'develop' https://yxinrauxa:3583b7510d409a81ff2a54ba6bdef9002d465eed@github.com/RauxaRepo/bms-outcomes-frontend.git",
-            "cp -r wp-content/themes/outcomes/build/bms-outcomes-frontend/dist .",
+            "rm -fr wp-content/themes/bms-outcomes/build/",
+            "rm -fr wp-content/themes/bms-outcomes/assets/",
+            "mkdir wp-content/themes/bms-outcomes/build",
+            "cd wp-content/themes/bms-outcomes/build && git clone --single-branch --branch 'develop' https://yxinrauxa:3583b7510d409a81ff2a54ba6bdef9002d465eed@github.com/RauxaRepo/bms-outcomes-frontend.git",
+            "cp -r wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist .",
             "rm -fr static",
             "mv dist static",
-            "mv wp-content/themes/outcomes/build/bms-outcomes-frontend/dist/assets wp-content/themes/outcomes/assets",
-            "rm -fr wp-content/themes/outcomes/build/"
+            "mv wp-content/themes/bms-outcomes/build/bms-outcomes-frontend/dist/assets wp-content/themes/bms-outcomes/assets",
+            "rm -fr wp-content/themes/bms-outcomes/build/"
 
         ],
         "get_theme": 
