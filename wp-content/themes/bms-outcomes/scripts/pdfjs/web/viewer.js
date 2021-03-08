@@ -1796,14 +1796,14 @@ var validateFileURL;
     'http://www.pomalyst.celgenevalwp.com',
     'https://www.pomalyst.com',
     'http://www.pomalyst.com',
-    'https://revlimidbringingoutcomestolife.celgenevalwp.com/',
-    'http://revlimidbringingoutcomestolife.celgenevalwp.com/',
-    'http://revlimidbringingoutcomestolife.com/',
-    'https://revlimidbringingoutcomestolife.com/',
-    'https://www.revlimidbringingoutcomestolife.celgenevalwp.com/',
-    'http://www.revlimidbringingoutcomestolife.celgenevalwp.com/',
-    'http://www.revlimidbringingoutcomestolife.com/',
-    'https://www.revlimidbringingoutcomestolife.com/',
+    'https://revlimidbringingoutcomestolife.celgenevalwp.com',
+    'http://revlimidbringingoutcomestolife.celgenevalwp.com',
+    'http://revlimidbringingoutcomestolife.com',
+    'https://revlimidbringingoutcomestolife.com',
+    'https://www.revlimidbringingoutcomestolife.celgenevalwp.com',
+    'http://www.revlimidbringingoutcomestolife.celgenevalwp.com',
+    'http://www.revlimidbringingoutcomestolife.com',
+    'https://www.revlimidbringingoutcomestolife.com',
   ];
 
   validateFileURL = function validateFileURL(file) {
