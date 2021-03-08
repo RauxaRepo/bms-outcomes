@@ -28,11 +28,12 @@
 </head>
 
 <body <?= body_class('js-body') ?>>
+<?php if( !empty(get_field('body_scripts_and_tags', 'option')) ) {
+    the_field('body_scripts_and_tags', 'option');
+} ?>
+
 <?php get_template_part('template-parts/gtm-iframe'); ?>
 <?php wp_body_open(); ?>
 
 <?php get_template_part('template-parts/header'); ?>
 
-<?php if( !empty(get_field('body_scripts_and_tags', 'option')) ) {
-    the_field('body_scripts_and_tags', 'option');
-} ?>
