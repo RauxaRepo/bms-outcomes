@@ -18,10 +18,13 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
+
+    <?php get_template_part('template-parts/gtm-head'); ?>
     <?php get_template_part('template-parts/ga'); ?>
 </head>
 
 <body <?= body_class('js-body') ?>>
+<?php get_template_part('template-parts/gtm-iframe'); ?>
 <?php wp_body_open(); ?>
 
 <?php get_template_part('template-parts/header'); ?>
