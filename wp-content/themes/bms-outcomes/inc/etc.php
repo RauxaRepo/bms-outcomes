@@ -48,11 +48,11 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
  * Google Tag ID
  */
 function clg_ga_tracking_id() {
-	echo get_field( 'ga_tracking_id', 'options' ); 
+	return get_field( 'ga_tracking_id', 'options' );
 }
 
 function clg_gtm_container_id() {
-	echo get_field('gtm_container_id', 'options');
+	return get_field('gtm_container_id', 'options');
 }
 
 

@@ -18,10 +18,21 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>
+
+    <?php get_template_part('template-parts/gtm-head'); ?>
     <?php get_template_part('template-parts/ga'); ?>
+
+    <?php if( !empty(get_field('header_scripts_and_tags', 'option')) ) {
+        the_field('header_scripts_and_tags', 'option');
+    } ?>
 </head>
 
 <body <?= body_class('js-body') ?>>
+<?php get_template_part('template-parts/gtm-iframe'); ?>
 <?php wp_body_open(); ?>
 
 <?php get_template_part('template-parts/header'); ?>
+
+<?php if( !empty(get_field('body_scripts_and_tags', 'option')) ) {
+    the_field('body_scripts_and_tags', 'option');
+} ?>

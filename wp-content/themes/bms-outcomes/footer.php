@@ -20,6 +20,10 @@ get_template_part( 'template-parts/fc', 'modals' );
 wp_footer();
 
 get_template_part( 'template-parts/options', 'error-overlay' );
+
+if (!empty(get_field('footer_scripts_and_tags', 'option'))) {
+    the_field('footer_scripts_and_tags', 'option');
+}
 ?>
 
 </body>
