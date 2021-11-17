@@ -59,4 +59,3 @@ Create a pull request at github to merge that feature with the develop branch.
 Once merged, Deploybot will be triggerd to deploy the develop branch to Pantheon.
 
 v2.0.0
-
